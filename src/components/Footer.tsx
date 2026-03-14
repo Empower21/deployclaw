@@ -5,17 +5,18 @@ import { CALENDLY_URL } from "@/data/pricing";
 
 export function Footer() {
   return (
-    <footer className="relative py-20 px-6">
+    <footer className="relative pt-20 pb-12 px-6">
       {/* Top divider */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
 
-      <div className="max-w-3xl mx-auto text-center">
+      <div className="max-w-3xl mx-auto">
         {/* Final CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6 }}
+          className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-black mb-4">
             Ready to Deploy Your
@@ -35,36 +36,61 @@ export function Footer() {
           </a>
         </motion.div>
 
-        {/* Bottom */}
-        <div className="mt-16 pt-8 border-t border-white/5">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2">
-              <span className="text-accent text-lg font-black">Deploy</span>
-              <span className="text-foreground text-lg font-black">Claw</span>
-            </div>
-            <p className="text-muted/40 text-xs">
-              &copy; {new Date().getFullYear()} DeployClaw. All rights reserved.
-            </p>
-            <div className="flex gap-5 text-muted/40 text-sm">
-              <a
-                href="https://x.com/deployclaw"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-foreground transition-colors"
-              >
-                X / Twitter
-              </a>
-              <a
-                href="https://linkedin.com/company/deployclaw"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-foreground transition-colors"
-              >
-                LinkedIn
-              </a>
-            </div>
+        {/* Contact line */}
+        <div className="border-t border-white/5 pt-8 mb-6">
+          <p className="text-center text-muted/50 text-sm">
+            Questions?{" "}
+            <a
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground underline underline-offset-2 hover:text-accent transition-colors"
+            >
+              Book a call
+            </a>
+            {" "}or DM on{" "}
+            <a
+              href="https://x.com/amdrautomate"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground underline underline-offset-2 hover:text-accent transition-colors"
+            >
+              @amdrautomate
+            </a>
+          </p>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4">
+          {/* Legal links */}
+          <div className="flex items-center gap-5 text-muted/40 text-xs">
+            <a
+              href="#"
+              className="hover:text-foreground underline underline-offset-2 transition-colors"
+            >
+              Terms of Service
+            </a>
+            <a
+              href="#"
+              className="hover:text-foreground underline underline-offset-2 transition-colors"
+            >
+              Privacy Policy
+            </a>
+          </div>
+
+          {/* Status indicator */}
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+            <span className="text-muted/50 text-xs">
+              Accepting new clients
+            </span>
           </div>
         </div>
+
+        {/* Copyright */}
+        <p className="text-center text-muted/25 text-[10px] mt-8">
+          &copy; {new Date().getFullYear()} DeployClaw by AMDR Automate. All rights reserved.
+        </p>
       </div>
     </footer>
   );
