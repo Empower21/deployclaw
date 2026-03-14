@@ -11,39 +11,51 @@ interface Quote {
 
 const QUOTES: Quote[] = [
   {
-    text: "It feels like hiring an employee rather than opening another chat window. The always-on aspect changes everything.",
-    author: "u/exec_ai_setup",
-    source: "r/OpenClaw",
-    sourceUrl: "https://reddit.com/r/OpenClaw",
+    text: "I wasted 80 hours and $800 setting up OpenClaw — so you don't have to.",
+    author: "@jordymaui",
+    source: "X / Twitter",
+    sourceUrl: "https://x.com/jordymaui/status/2023421221744877903",
+  },
+  {
+    text: "Finally set up OpenClaw today and am completely blown away! This is the closest to experiencing an AI enabled future! Truly a game changer!",
+    author: "@kailazh",
+    source: "X / Twitter",
+    sourceUrl: "https://x.com/kailazh/status/2010296143922758133",
+  },
+  {
+    text: "Most people who try OpenClaw bounce off the install, not the functionality. The setup involves Docker, API keys, channel auth, and gateway config.",
+    author: "HN commenter",
+    source: "Hacker News",
+    sourceUrl: "https://news.ycombinator.com/item?id=46838946",
+  },
+  {
+    text: "OpenClaw is absolute game changer for me. The amount of things I done from my phone just during my breakfast is absolutely breathtaking.",
+    author: "@chrisdietr",
+    source: "X / Twitter",
   },
   {
     text: "Every self-install I've seen has security gaps: exposed credentials, no audit trail, no sandbox. The installation is straightforward; the hardening is where most teams need help.",
-    author: "u/infosec_deployer",
+    author: "OpenClaw community member",
     source: "r/selfhosted",
     sourceUrl: "https://reddit.com/r/selfhosted",
   },
   {
-    text: "I could have set it up myself but the security hardening alone was worth it. Docker sandboxing, firewall rules, Composio OAuth — that would have taken me a week.",
-    author: "u/startup_cto_nyc",
-    source: "r/LocalLLaMA",
-    sourceUrl: "https://reddit.com/r/LocalLLaMA",
+    text: "I submitted my first app to Apple for review mostly through OpenClaw using Telegram — amazing not having to be at my computer to iterate.",
+    author: "Anonymous developer",
+    source: "OpenClaw Showcase",
+    sourceUrl: "https://openclaw.ai/showcase",
   },
   {
-    text: "Your slots are going insanely fast. Already sent referrals to friends.",
-    author: "Open source community member",
-    source: "Hacker News",
-    sourceUrl: "https://news.ycombinator.com",
+    text: "When it works, it's impressive, but when it fails, it burns time and tokens. Best viewed as a powerful experiment rather than a dependable worker — unless someone hardens it for you.",
+    author: "Reviewer",
+    source: "Hackceleration",
+    sourceUrl: "https://hackceleration.com/openclaw-review/",
   },
   {
-    text: "You're solving a problem that people like me probably wouldn't take the time to solve ourselves. Especially the ongoing maintenance part.",
-    author: "CEO, insurance technology startup",
-    source: "OpenClaw Discord",
-  },
-  {
-    text: "Having the bot manage email, calendar, and Slack simultaneously — and coordinate across all three — is genuinely sci-fi adjacent. My EA handles 60% less busywork now.",
-    author: "u/founder_leverage",
-    source: "r/artificial",
-    sourceUrl: "https://reddit.com/r/artificial",
+    text: "Your context and skills live on YOUR computer, not a walled garden. It's open source. Growing community building skills.",
+    author: "OpenClaw community member",
+    source: "OpenClaw Shoutouts",
+    sourceUrl: "https://openclaw.ai/shoutouts",
   },
 ];
 
