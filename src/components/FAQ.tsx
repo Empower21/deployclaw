@@ -6,31 +6,35 @@ import { motion, AnimatePresence } from "framer-motion";
 const FAQS = [
   {
     q: "What is OpenClaw?",
-    a: "OpenClaw is an open-source AI assistant that runs entirely on a Mac Mini in your office. It can answer questions, draft documents, analyze data, and automate tasks — all without sending your data to any cloud service.",
+    a: "An open-source AI assistant that runs on dedicated infrastructure — a cloud server or a Mac Mini in your office. It connects to your email, calendar, CRM, and messaging tools, then works around the clock: triaging your inbox, prepping meetings, drafting replies, and automating repetitive workflows. Think of it as a digital team member that never sleeps.",
   },
   {
-    q: "Why on-premise instead of cloud AI?",
-    a: "Cloud AI services (ChatGPT, Claude, etc.) send your data to external servers. OpenClaw keeps everything on YOUR hardware. This is critical for law firms, healthcare, finance, and any business handling sensitive information.",
+    q: "Do I need to be technical?",
+    a: "Not at all. We handle every aspect of setup — infrastructure, security, integrations, and configuration. After deployment, you interact with your agent through Telegram, Slack, or WhatsApp — the same apps you already use. Many of our clients are non-technical founders and executives.",
   },
   {
-    q: "What hardware do I need?",
-    a: "Just a Mac Mini (M2 or newer) and an internet connection for updates. We can source the hardware for you or configure one you already own. The Mac Mini runs 24/7 as a local AI server your team accesses via browser.",
+    q: "Why not just use ChatGPT or Claude?",
+    a: "Chat tools are reactive — they wait for you to open a tab and type a prompt. OpenClaw is proactive: it runs 24/7, monitors your tools in the background, and takes action without you asking. Plus, your data stays on your own infrastructure — nothing goes to a third-party cloud.",
   },
   {
-    q: "How long does deployment take?",
-    a: "48 hours from the moment we start. Remote deployments include shipping time (2-3 business days). On-site deployments are completed the same day we arrive.",
+    q: "Can I just set it up myself?",
+    a: "You can — it's open source. But between Docker setup, API key management, OAuth configuration, firewall hardening, and wiring up integrations, most teams spend 40–80 hours before they have something production-ready. We've done this hundreds of times and can get you live in under 48 hours.",
   },
   {
-    q: "Do I need technical staff to maintain it?",
-    a: "No. That's what ClawCare is for. We handle monitoring, updates, and support so you don't need any technical expertise on your team. Without ClawCare, we provide a handoff guide.",
+    q: "Do you work with Caribbean businesses?",
+    a: "Yes — we're the only OpenClaw deployment service with on-the-ground presence in the Caribbean. We offer in-person setup in Jamaica, The Bahamas, Trinidad, and Barbados. Remote deployments work the same everywhere — same tools, same support, same turnaround.",
   },
   {
-    q: "Can multiple team members use it?",
-    a: "Yes. OpenClaw supports multiple concurrent users on your local network. During setup, we configure access for your entire team and provide individual training.",
+    q: "What happens after the initial setup?",
+    a: "Every deployment includes a hypercare period (14–60 days depending on your tier) where we actively tune workflows and fix issues. After that, our Managed Care plans provide ongoing monitoring, updates, and priority support — or you can run it independently with the documentation we provide.",
+  },
+  {
+    q: "Can multiple people on my team use it?",
+    a: "Yes. OpenClaw supports multiple concurrent users. For larger teams, we often deploy separate agents for different roles — a CEO agent handling email and calendar, a Sales agent managing CRM and outreach, a Finance agent tracking invoices. Each agent has its own identity and permissions.",
   },
   {
     q: "What's your refund policy?",
-    a: "30-day money-back guarantee on all deployment tiers. If OpenClaw doesn't meet your expectations within the first 30 days, we'll refund the full deployment fee. Hardware costs are non-refundable.",
+    a: "Full refund within 14 days of deployment if you're not satisfied — no questions asked. We're confident in our work, and we'd rather earn your trust than hold you to a contract.",
   },
 ];
 
@@ -51,7 +55,7 @@ export function FAQ() {
             FAQ
           </p>
           <h2 className="text-3xl md:text-4xl font-bold">
-            Common Questions
+            Questions We Hear Often
           </h2>
         </motion.div>
 
@@ -62,7 +66,7 @@ export function FAQ() {
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.4, delay: i * 0.05 }}
+              transition={{ duration: 0.4, delay: i * 0.04 }}
               className="bg-surface rounded-xl border border-white/5 overflow-hidden"
             >
               <button

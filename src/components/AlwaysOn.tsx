@@ -2,22 +2,22 @@
 
 import { motion } from "framer-motion";
 
-const CAPABILITIES = [
+const EXAMPLES = [
   {
-    tag: "Every 30 min",
-    text: "Scans your inbox, flags urgent emails, drafts replies for your review",
+    label: "Morning brief",
+    text: "Your agent sends a daily digest: today's meetings, attendee context, prep notes, and flagged emails.",
   },
   {
-    tag: "9:00 AM daily",
-    text: "Sends you a briefing: today's meetings, attendee backgrounds, prep notes",
+    label: "Inbox patrol",
+    text: "Scans email every 30 minutes. Urgent items get flagged. Routine replies get drafted for your approval.",
   },
   {
-    tag: "On demand",
-    text: '"I\'m running 10 min late" → bot emails your next meeting and reschedules',
+    label: "Quick commands",
+    text: "Text it \"reschedule my 2pm\" and it handles the calendar shuffle, emails the other party, and confirms.",
   },
   {
-    tag: "Ongoing",
-    text: "Monitors Slack channels, summarizes threads, surfaces what matters",
+    label: "Background ops",
+    text: "Watches your Slack and CRM for signals — overdue deals, unanswered threads, missed follow-ups.",
   },
 ];
 
@@ -33,33 +33,33 @@ export function AlwaysOn() {
           className="mb-12"
         >
           <p className="text-accent-light/60 text-xs tracking-[6px] uppercase mb-3">
-            Always On, Always Working
+            What Your Agent Actually Does
           </p>
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Unlike ChatGPT or Claude Desktop, your OpenClaw agent runs{" "}
-            <strong>24/7 on dedicated infrastructure.</strong>
+            An employee that never clocks out.
           </h2>
           <p className="text-muted text-sm leading-relaxed">
-            It wakes up every 30 minutes, checks your email, calendar, and
-            connected tools — and takes action without you asking.
+            Unlike ChatGPT or Copilot, your OpenClaw agent runs on dedicated
+            infrastructure around the clock. It proactively checks your tools,
+            surfaces what matters, and takes action — without you opening a tab.
           </p>
         </motion.div>
 
         <div className="space-y-4">
-          {CAPABILITIES.map((cap, i) => (
+          {EXAMPLES.map((item, i) => (
             <motion.div
-              key={cap.tag}
+              key={item.label}
               initial={{ opacity: 0, x: -16 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
               className="flex items-start gap-4"
             >
-              <span className="shrink-0 text-[11px] text-muted/60 bg-surface-light border border-white/[0.06] px-3 py-1.5 rounded-lg min-w-[100px] text-center">
-                {cap.tag}
+              <span className="shrink-0 text-[11px] text-muted/60 bg-surface-light border border-white/[0.06] px-3 py-1.5 rounded-lg min-w-[110px] text-center">
+                {item.label}
               </span>
               <p className="text-sm text-muted leading-relaxed pt-1">
-                {cap.text}
+                {item.text}
               </p>
             </motion.div>
           ))}
@@ -72,10 +72,9 @@ export function AlwaysOn() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="text-muted/50 text-sm mt-8"
         >
-          You talk to your bot through{" "}
-          <strong className="text-foreground">Telegram</strong> (or Slack,
-          WhatsApp, Discord) — just like texting an assistant. No technical
-          knowledge required.
+          You interact through{" "}
+          <strong className="text-foreground">Telegram, Slack, or WhatsApp</strong>{" "}
+          — the same apps you already use. No new software to learn.
         </motion.p>
       </div>
     </section>

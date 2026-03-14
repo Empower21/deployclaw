@@ -2,27 +2,27 @@
 
 import { motion } from "framer-motion";
 
-const SERVICES = [
+const PILLARS = [
   {
     icon: "\u26A1",
     title: "Deploy",
     description:
-      "We configure OpenClaw on a VPS or Mac Mini, connect your tools, set up Docker sandboxing, firewall rules, and cron jobs. You go live same day.",
-    points: ["Turnkey setup — zero config on your end", "Custom AI training on your docs", "Email, calendar & Slack wired on day one"],
+      "We provision your server, install OpenClaw, wire up your email, calendar, CRM, and messaging apps — then hand you a working agent you can text from your phone.",
+    points: ["Live in under 48 hours", "Custom workflows built to your ops", "Zero technical lift on your side"],
   },
   {
-    icon: "\u25C6",
+    icon: "\u26E8",
     title: "Harden",
     description:
-      "Composio OAuth middleware so your bot never touches raw credentials. Docker sandbox, exec allowlists, and read-only permissions by default.",
-    points: ["Bot never sees raw credentials", "Full audit trail on every action", "HIPAA & SOC2 friendly architecture"],
+      "Every deployment gets a full security pass: sandboxed execution, credential isolation through Composio, firewall lockdown, and minimal-permission defaults.",
+    points: ["Credentials never touch the bot directly", "Sandboxed execution environment", "Audit trail on every agent action"],
   },
   {
-    icon: "\u2699",
+    icon: "\u2692",
     title: "Maintain",
     description:
-      "OAuth tokens expire, integrations break, workflows drift. ClawCare keeps everything running so your team doesn't have to think about it.",
-    points: ["Automatic OpenClaw updates", "24/7 uptime monitoring", "< 2hr priority response"],
+      "Tokens expire. APIs change. Models improve. Our Managed Care plans handle monitoring, patching, and workflow tuning so nothing breaks while you sleep.",
+    points: ["Proactive monitoring and updates", "Priority response when things drift", "Monthly optimization reports"],
   },
 ];
 
@@ -38,20 +38,20 @@ export function Services() {
           className="text-center mb-16"
         >
           <p className="text-accent-light/60 text-xs tracking-[6px] uppercase mb-3">
-            Turnkey Service
+            Full-Service Delivery
           </p>
           <h2 className="text-3xl md:text-4xl font-bold">
-            Deploy. Harden. Maintain.
+            From First Call to Fully Operational
           </h2>
           <p className="text-muted text-sm mt-3 max-w-md mx-auto">
-            End-to-end AI deployment — from hardware to ongoing managed care
+            One team handles everything — no handoffs, no finger-pointing
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {SERVICES.map((service, i) => (
+          {PILLARS.map((pillar, i) => (
             <motion.div
-              key={service.title}
+              key={pillar.title}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
@@ -59,14 +59,14 @@ export function Services() {
               className="bg-surface rounded-2xl p-8 border border-white/5 hover:border-accent/20 transition-all duration-300 hover:-translate-y-1"
             >
               <span className="text-accent-light text-2xl mb-5 block">
-                {service.icon}
+                {pillar.icon}
               </span>
-              <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+              <h3 className="text-xl font-bold mb-3">{pillar.title}</h3>
               <p className="text-muted text-sm leading-relaxed mb-5">
-                {service.description}
+                {pillar.description}
               </p>
               <ul className="space-y-2">
-                {service.points.map((point) => (
+                {pillar.points.map((point) => (
                   <li
                     key={point}
                     className="flex items-center gap-2 text-sm text-muted"

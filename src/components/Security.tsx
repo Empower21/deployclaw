@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { CALENDLY_URL } from "@/data/pricing";
 
 export function Security() {
   return (
@@ -14,13 +15,13 @@ export function Security() {
           className="mb-10"
         >
           <p className="text-accent-light/60 text-xs tracking-[6px] uppercase mb-3">
-            Security-First by Design
+            Your Data Stays Yours
           </p>
           <p className="text-muted text-sm leading-relaxed max-w-2xl">
-            Your bot never sees raw credentials. We use{" "}
-            <strong className="text-foreground">Composio</strong> as a security
-            middleware layer — all OAuth tokens are managed separately with a
-            full audit trail and instant revoke capability.
+            Every deployment follows a hardened security baseline. We use
+            Composio as a credential isolation layer — your agent never
+            touches raw OAuth tokens or API keys directly. Everything runs
+            in a sandboxed environment with full audit logging.
           </p>
         </motion.div>
 
@@ -32,18 +33,18 @@ export function Security() {
           className="grid grid-cols-1 sm:grid-cols-2 gap-3"
         >
           {[
-            "Docker sandboxing & firewall hardening",
-            "Exec allowlists — only approved commands",
-            "Read-only permissions by default",
-            "Instant kill switch for any integration",
-            "Full audit trail on every action",
-            "Expand access gradually as you build trust",
+            "Sandboxed execution with process isolation",
+            "Credential-free agent via Composio middleware",
+            "Read-only permissions until you say otherwise",
+            "One-click revoke on any connected tool",
+            "Full audit log of every agent action",
+            "Gradual trust expansion — start minimal, grow over time",
           ].map((item, i) => (
             <div
               key={i}
               className="flex items-center gap-2.5 text-sm text-muted"
             >
-              <span className="text-accent-light text-xs">&#9670;</span>
+              <span className="text-accent-light text-xs">{"\u25C6"}</span>
               {item}
             </div>
           ))}
@@ -56,19 +57,20 @@ export function Security() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mt-10 bg-surface rounded-xl border border-white/[0.06] p-6"
         >
-          <h3 className="font-bold text-sm mb-2">Already running OpenClaw?</h3>
+          <h3 className="font-bold text-sm mb-2">Already running OpenClaw on your own?</h3>
           <p className="text-muted text-sm leading-relaxed">
-            Many teams come to us with a working install that has security gaps.
-            We&apos;ll audit your setup, add Composio for secure OAuth, harden your
-            firewall and Docker config, and migrate you to managed care. Same
-            pricing —{" "}
+            We see a lot of self-managed installs with exposed credentials,
+            missing firewalls, and no audit trail. We can audit your setup,
+            apply our security baseline, and bring you onto Managed Care —{" "}
             <a
-              href="#pricing"
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-accent-light underline underline-offset-2 hover:text-foreground transition-colors"
             >
               book a call
             </a>{" "}
-            and we&apos;ll assess what needs fixing.
+            and we&apos;ll tell you what needs fixing.
           </p>
         </motion.div>
       </div>

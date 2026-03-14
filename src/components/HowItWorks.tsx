@@ -5,18 +5,18 @@ import { motion } from "framer-motion";
 const STEPS = [
   {
     step: "1",
-    title: "Kickoff call",
-    description: "We discuss your goals, map your integrations (email, calendar, CRM, messaging), and plan your agent's workflows. You tell us what to automate — we handle the rest.",
+    title: "Strategy call",
+    description: "15 minutes. We map your tools, understand your workflows, and figure out where an AI agent creates the most leverage for your team.",
   },
   {
     step: "2",
-    title: "Deploy & harden",
-    description: "We set up your VPS or Mac Mini, install OpenClaw, configure Composio for secure OAuth, connect your tools, set up Docker sandboxing, firewall rules, and cron jobs. You go live same day.",
+    title: "Build and ship",
+    description: "We provision your infrastructure, install OpenClaw, connect your integrations, apply our security baseline, and hand you a working agent — typically same day.",
   },
   {
     step: "3",
-    title: "14-day hypercare",
-    description: "We tune workflows, expand permissions as you build trust, fix edge cases, and make sure everything runs smoothly. Dedicated Slack channel for direct support.",
+    title: "Tune and support",
+    description: "For the first 14–60 days (depending on your tier), we actively refine workflows, expand permissions as trust builds, and fix anything that surfaces.",
   },
 ];
 
@@ -34,7 +34,7 @@ export function HowItWorks() {
           className="mb-12"
         >
           <p className="text-accent-light/60 text-xs tracking-[6px] uppercase mb-3">
-            How It Works
+            Three Steps to Live
           </p>
         </motion.div>
 

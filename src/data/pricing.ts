@@ -2,73 +2,86 @@ export interface Tier {
   id: string;
   name: string;
   price: string;
+  suffix?: string;
   description: string;
   features: string[];
-  highlight?: boolean;
   badge?: string;
-  cta: string;
 }
 
 export const TIERS: Tier[] = [
   {
-    id: "hosted",
-    name: "Hosted Setup",
-    price: "$3,000",
-    description: "Managed VPS deployment — we host, harden + 14-day hypercare",
-    badge: "Recommended",
+    id: "starter",
+    name: "Starter",
+    price: "$1,497",
+    description: "For solo founders and small teams (1–10 people). Get your first AI agent live on a cloud server with core integrations.",
     features: [
-      "Cloud VPS provisioning & security hardening",
-      "Composio OAuth middleware setup",
-      "Email and calendar integration",
-      "Up to 3 workflows",
-      "Documentation + 14-day hypercare",
+      "Hardened cloud VPS deployment",
+      "Email + calendar wired on day one",
+      "1 custom automation workflow",
+      "Documentation + video walkthrough",
+      "14-day direct support via Slack or WhatsApp",
     ],
-    cta: "Book Hosted Setup",
   },
   {
-    id: "macmini-remote",
-    name: "Mac Mini Setup",
-    price: "$5,000",
-    description: "Remote — iMessage integration + local hardware",
+    id: "growth",
+    name: "Growth",
+    price: "$2,997",
+    badge: "Best Value",
+    description: "For growing teams (10–25 people) that need multi-department coverage — sales, ops, and leadership each get their own workflows.",
     features: [
-      "Everything in Hosted Setup",
-      "Mac Mini configuration (you provide or we source at cost)",
-      "iMessage integration",
-      "Network security audit",
-      "30-day hypercare",
+      "Everything in Starter",
+      "Up to 3 custom automation workflows",
+      "CRM or project tool integration (HubSpot, Notion, etc.)",
+      "Team onboarding session (up to 5 users)",
+      "30-day direct support",
     ],
-    cta: "Book Mac Mini Setup",
   },
   {
-    id: "macmini-onsite",
-    name: "Mac Mini In-Person",
-    price: "$6,000",
-    description: "Atlanta, Miami, or Kingston — on-site setup + iMessage",
+    id: "concierge",
+    name: "Full Concierge",
+    price: "$4,997",
+    suffix: "+",
+    description: "For teams that want the full white-glove experience — on-site deployment, custom AI agents, and hands-on executive training.",
     features: [
-      "Everything in Mac Mini Setup",
-      "In-person deployment & team training",
-      "Executive briefing for leadership",
-      "Network & security walkthrough",
-      "60-day hypercare",
+      "Everything in Growth",
+      "Up to 6 custom workflows",
+      "On-site setup in Atlanta or Miami included",
+      "Custom AI agent development (up to 2 agents)",
+      "Executive 1-on-1 training",
+      "60-day direct support + monthly strategy calls",
     ],
-    highlight: true,
-    cta: "Book In-Person Setup",
   },
 ];
 
-export const CLAWCARE: Tier = {
-  id: "clawcare",
-  name: "Managed Care",
-  price: "$497",
-  description: "Ongoing monitoring, updates, and priority support. We don't just deploy and disappear.",
-  features: [
-    "24/7 system monitoring",
-    "Automatic OpenClaw updates",
-    "Priority support (< 2hr response)",
-    "Monthly performance reports",
-    "Quarterly strategy calls",
-  ],
-  cta: "Add Managed Care",
-};
+export const ADDONS = [
+  { name: "Additional AI agent", price: "$1,497", note: "CEO, Sales, Finance — each identity gets its own agent" },
+  { name: "Caribbean on-site deployment", price: "+$2,500", note: "Jamaica, Bahamas, Trinidad, Barbados — we fly to you" },
+  { name: "Additional workflow", price: "$497", note: "New automation after initial setup" },
+  { name: "Extra tool integration", price: "$297", note: "Connect another app to your agent" },
+];
+
+export interface Careplan {
+  name: string;
+  price: string;
+  description: string;
+}
+
+export const MANAGED_CARE: Careplan[] = [
+  {
+    name: "Essential",
+    price: "$197/mo",
+    description: "Monitoring, updates, 2 support tickets/month, uptime guarantee",
+  },
+  {
+    name: "Professional",
+    price: "$497/mo",
+    description: "Everything in Essential + 1 new workflow/month, priority support, monthly optimization report",
+  },
+  {
+    name: "Fractional AI Lead",
+    price: "$1,997/mo",
+    description: "8 hrs/month strategic AI consulting, new agent development, quarterly roadmap",
+  },
+];
 
 export const CALENDLY_URL = "https://calendly.com/amdrautomate/deployclaw";
