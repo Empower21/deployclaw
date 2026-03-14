@@ -20,13 +20,13 @@ export function Navbar() {
       transition={{ duration: 0.5, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#0a0a0a]/90 backdrop-blur-md border-b border-white/5"
+          ? "bg-background/90 backdrop-blur-md border-b border-white/5"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
-          <span className="text-accent text-2xl font-black tracking-tight">
+        <a href="#" className="flex items-center gap-1.5">
+          <span className="text-accent-light text-2xl font-black tracking-tight">
             Deploy
           </span>
           <span className="text-foreground text-2xl font-black tracking-tight">

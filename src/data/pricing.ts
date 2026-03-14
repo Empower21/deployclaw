@@ -2,7 +2,6 @@ export interface Tier {
   id: string;
   name: string;
   price: string;
-  period?: string;
   description: string;
   features: string[];
   highlight?: boolean;
@@ -12,56 +11,55 @@ export interface Tier {
 
 export const TIERS: Tier[] = [
   {
-    id: "remote",
-    name: "Remote Deploy",
-    price: "$3,997",
-    description: "We ship a pre-configured Mac Mini to your door and set everything up remotely.",
+    id: "hosted",
+    name: "Hosted Setup",
+    price: "$3,000",
+    description: "Managed VPS deployment — we host, harden + 14-day hypercare",
+    badge: "Recommended",
     features: [
-      "Mac Mini with OpenClaw pre-installed",
-      "48-hour remote deployment",
-      "Video call onboarding session",
-      "30-day post-deploy support",
-      "Ships anywhere in the US & Caribbean",
+      "Cloud VPS provisioning & security hardening",
+      "Composio OAuth middleware setup",
+      "Email and calendar integration",
+      "Up to 3 workflows",
+      "Documentation + 14-day hypercare",
     ],
-    cta: "Book Remote Deploy",
+    cta: "Book Hosted Setup",
   },
   {
-    id: "onsite",
-    name: "On-Site Deploy",
-    price: "$4,997",
-    description: "We come to your office and deploy OpenClaw in person. Hands-on setup and training.",
+    id: "macmini-remote",
+    name: "Mac Mini Setup",
+    price: "$5,000",
+    description: "Remote — iMessage integration + local hardware",
     features: [
-      "Everything in Remote Deploy",
-      "In-person setup & configuration",
-      "Team training session (up to 10 people)",
+      "Everything in Hosted Setup",
+      "Mac Mini configuration (you provide or we source at cost)",
+      "iMessage integration",
       "Network security audit",
-      "60-day post-deploy support",
+      "30-day hypercare",
+    ],
+    cta: "Book Mac Mini Setup",
+  },
+  {
+    id: "macmini-onsite",
+    name: "Mac Mini In-Person",
+    price: "$6,000",
+    description: "Atlanta, Miami, or Kingston — on-site setup + iMessage",
+    features: [
+      "Everything in Mac Mini Setup",
+      "In-person deployment & team training",
+      "Executive briefing for leadership",
+      "Network & security walkthrough",
+      "60-day hypercare",
     ],
     highlight: true,
-    badge: "Most Popular",
-    cta: "Book On-Site Deploy",
-  },
-  {
-    id: "island",
-    name: "Island Deploy",
-    price: "$5,997",
-    description: "Full white-glove deployment across the Caribbean. We fly to you.",
-    features: [
-      "Everything in On-Site Deploy",
-      "Caribbean on-site deployment",
-      "JA, Bahamas, Cayman, TT, Barbados, Bermuda",
-      "Executive briefing for leadership",
-      "90-day post-deploy support",
-    ],
-    cta: "Book Island Deploy",
+    cta: "Book In-Person Setup",
   },
 ];
 
 export const CLAWCARE: Tier = {
   id: "clawcare",
-  name: "ClawCare",
+  name: "Managed Care",
   price: "$497",
-  period: "/mo",
   description: "Ongoing monitoring, updates, and priority support. We don't just deploy and disappear.",
   features: [
     "24/7 system monitoring",
@@ -70,7 +68,7 @@ export const CLAWCARE: Tier = {
     "Monthly performance reports",
     "Quarterly strategy calls",
   ],
-  cta: "Add ClawCare",
+  cta: "Add Managed Care",
 };
 
 export const CALENDLY_URL = "https://calendly.com/amdrautomate/deployclaw";

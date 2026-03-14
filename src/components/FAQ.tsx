@@ -47,7 +47,7 @@ export function FAQ() {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <p className="text-accent/60 text-xs tracking-[6px] uppercase mb-3">
+          <p className="text-accent-light/60 text-xs tracking-[6px] uppercase mb-3">
             FAQ
           </p>
           <h2 className="text-3xl md:text-4xl font-bold">
@@ -71,7 +71,7 @@ export function FAQ() {
               >
                 <span className="font-semibold text-sm pr-4">{faq.q}</span>
                 <span
-                  className={`text-accent text-lg shrink-0 transition-transform duration-200 ${
+                  className={`text-accent-light text-lg shrink-0 transition-transform duration-200 ${
                     openIndex === i ? "rotate-45" : ""
                   }`}
                 >
