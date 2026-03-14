@@ -11,33 +11,15 @@ interface Quote {
 
 const QUOTES: Quote[] = [
   {
-    text: "I wasted 80 hours and $800 setting up OpenClaw — so you don't have to.",
-    author: "@jordymaui",
-    source: "X / Twitter",
-    sourceUrl: "https://x.com/jordymaui/status/2023421221744877903",
-  },
-  {
     text: "Finally set up OpenClaw today and am completely blown away! This is the closest to experiencing an AI enabled future! Truly a game changer!",
     author: "@kailazh",
     source: "X / Twitter",
     sourceUrl: "https://x.com/kailazh/status/2010296143922758133",
   },
   {
-    text: "Most people who try OpenClaw bounce off the install, not the functionality. The setup involves Docker, API keys, channel auth, and gateway config.",
-    author: "HN commenter",
-    source: "Hacker News",
-    sourceUrl: "https://news.ycombinator.com/item?id=46838946",
-  },
-  {
     text: "OpenClaw is absolute game changer for me. The amount of things I done from my phone just during my breakfast is absolutely breathtaking.",
     author: "@chrisdietr",
     source: "X / Twitter",
-  },
-  {
-    text: "Every self-install I've seen has security gaps: exposed credentials, no audit trail, no sandbox. The installation is straightforward; the hardening is where most teams need help.",
-    author: "OpenClaw community member",
-    source: "r/selfhosted",
-    sourceUrl: "https://reddit.com/r/selfhosted",
   },
   {
     text: "I submitted my first app to Apple for review mostly through OpenClaw using Telegram — amazing not having to be at my computer to iterate.",
@@ -46,16 +28,21 @@ const QUOTES: Quote[] = [
     sourceUrl: "https://openclaw.ai/showcase",
   },
   {
-    text: "When it works, it's impressive, but when it fails, it burns time and tokens. Best viewed as a powerful experiment rather than a dependable worker — unless someone hardens it for you.",
-    author: "Reviewer",
-    source: "Hackceleration",
-    sourceUrl: "https://hackceleration.com/openclaw-review/",
-  },
-  {
     text: "Your context and skills live on YOUR computer, not a walled garden. It's open source. Growing community building skills.",
     author: "OpenClaw community member",
     source: "OpenClaw Shoutouts",
     sourceUrl: "https://openclaw.ai/shoutouts",
+  },
+  {
+    text: "Finally got around to fully configuring my OpenClaw instance, and it's so so good. Even at the most basic level, being able to spin up agents to implement features from my phone is mind-blowing.",
+    author: "@cnlinkcnlink",
+    source: "X / Twitter",
+  },
+  {
+    text: "My personal bot has replaced at least half the apps I used to operate myself.",
+    author: "OpenClaw user",
+    source: "OpenClaw Showcase",
+    sourceUrl: "https://openclaw.ai/showcase",
   },
 ];
 
@@ -71,7 +58,7 @@ export function Testimonials() {
           className="flex items-center justify-between mb-12"
         >
           <p className="text-accent-light/60 text-xs tracking-[6px] uppercase">
-            What People Are Saying
+            From the OpenClaw Community
           </p>
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-success animate-pulse" />

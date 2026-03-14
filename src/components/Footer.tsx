@@ -52,7 +52,7 @@ export function Footer() {
             </a>
             {" "}or DM on{" "}
             <a
-              href="https://x.com/amdrautomate"
+              href="https://instagram.com/amdrautomate"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground underline underline-offset-2 hover:text-accent-light transition-colors"
@@ -65,13 +65,22 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4">
           <div className="flex items-center gap-5 text-muted/40 text-xs">
-            <a href="#" className="hover:text-foreground underline underline-offset-2 transition-colors">
+            <a
+              href="/terms"
+              className="hover:text-foreground underline underline-offset-2 transition-colors"
+            >
               Terms of Service
             </a>
-            <a href="#" className="hover:text-foreground underline underline-offset-2 transition-colors">
+            <a
+              href="/privacy"
+              className="hover:text-foreground underline underline-offset-2 transition-colors"
+            >
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-foreground underline underline-offset-2 transition-colors">
+            <a
+              href="/affiliates"
+              className="hover:text-foreground underline underline-offset-2 transition-colors"
+            >
               Affiliates
             </a>
           </div>
