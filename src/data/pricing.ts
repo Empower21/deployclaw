@@ -73,4 +73,4 @@ export const CLAWCARE: Tier = {
   cta: "Add ClawCare",
 };
 
-export const CALENDLY_URL = "https://calendly.com/deployclaw/consultation";
+export const CALENDLY_URL = "https://calendly.com/amdrautomate/deployclaw";
