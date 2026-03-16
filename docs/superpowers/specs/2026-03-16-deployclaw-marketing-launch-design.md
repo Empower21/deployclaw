@@ -2,7 +2,7 @@
 
 **Date**: 2026-03-16
 **Service**: DeployClaw by AMDR Automate AI
-**Website**: claw.amdrautomate.ai / deployclaw-seven.vercel.app
+**Website**: claw.amdrautomate.ai (canonical — deployclaw-seven.vercel.app redirects here)
 **Calendly**: https://calendly.com/amdrautomate/deployclaw
 **Brand**: Post under AMDR Automate AI — DeployClaw is a named service, not a separate brand
 **Timeline**: 30-day aggressive launch
@@ -17,11 +17,13 @@
 |------|------------|---------|
 | Commodity | $25-$100 | 24 Fiverr sellers (keyword-stuffing generalists) |
 | Professional | $100-$800 | Upwork freelancers |
-| **Our Gap** | **$497-$2,997** | **DeployClaw** |
+| **Our Gap** | **$297-$2,997** | **DeployClaw** |
 | White-glove | $3,000-$6,000 | SetupClaw, Nashville Lobster Ranch |
 | DIY Managed | $199 one-time | OpenClawPro (automated, no white-glove) |
 
-### Pricing (live on site)
+### Pricing Architecture
+
+**Website tiers** (claw.amdrautomate.ai):
 | Package | Price | Target |
 |---------|-------|--------|
 | QuickDeploy | $497 | Solo founders testing the waters |
@@ -31,24 +33,41 @@
 | ClawCare Pro | $297/mo | Workflows + priority support |
 | Fractional AI Lead | $1,497/mo | Strategic consulting + development |
 
+**Fiverr-exclusive entry tier** (not on website — used as funnel to upsell):
+| Package | Price | Purpose |
+|---------|-------|---------|
+| Install & Harden | $297 | Fiverr-only loss leader to get foot in door, upsell to QuickDeploy or TurnKey off-platform |
+
+### Satisfaction Guarantee Policy
+- **Scope**: Applies to all one-time deployment packages (QuickDeploy, TurnKey, Concierge)
+- **Window**: Full refund within 7 days of delivery completion
+- **Conditions**: Refund if the deployed agent is not functional as scoped. Does not cover: scope changes requested after delivery, third-party API outages, or client-side changes that break the setup
+- **Fiverr**: Subject to Fiverr's own resolution center policies
+- **Copy version (for listings)**: "7-day satisfaction guarantee — if your deployment isn't working as promised, full refund. No questions."
+
+### Testimonial Attribution Policy
+All quotes from the OpenClaw community must be clearly attributed as **platform reviews, not DeployClaw client testimonials**. Use framing like "Here's what people say about OpenClaw as a platform" or "What the OpenClaw community is saying." Never imply these are endorsements of DeployClaw's service. Replace with actual client testimonials as they become available.
+
 ---
 
 ## Platform Strategy
 
 ### Ranked by ROI (Revenue vs. Effort)
 
-| Priority | Platform | Role | Price to List |
-|----------|----------|------|-------------|
-| 1 | Upwork | High-intent buyers, retainer potential | 10% fee |
+| Priority | Platform | Role | Fee |
+|----------|----------|------|-----|
+| 1 | Upwork | High-intent buyers, retainer potential | 10% |
 | 2 | LinkedIn | Decision-maker access, Caribbean reach | Free |
-| 3 | Fiverr | Entry funnel ($297-$997), upsell to TurnKey | 20% fee |
+| 3 | Fiverr | Entry funnel ($297-$997), upsell to TurnKey | 20% |
 | 4 | Reddit | Warmest leads (people stuck deploying NOW) | Free |
 | 5 | Discord | Direct community trust-building | Free |
 | 6 | Contra | 0% commission alternative marketplace | Free |
 | 7 | Product Hunt | One-time awareness spike | Free |
 | 8 | X/Twitter | Build-in-public, inbound leads | Free |
 | 9 | Instagram | Caribbean audience, visual authority | Free |
-| 10 | Google Business Profile | Passive local SEO (Atlanta, Miami) | Free |
+| 10 | TikTok | Cross-post short-form video (Reels repurposed) | Free |
+| 11 | Facebook Groups | Atlanta + Caribbean entrepreneur communities | Free |
+| 12 | Google Business Profile | Passive local SEO (Atlanta, Miami) | Free |
 
 ---
 
@@ -72,12 +91,14 @@
 | Revisions | 1 | 2 | 3 |
 | What's included | VPS install, Docker hardening, basic config, handoff doc | Full QuickDeploy — email + calendar wired, 1 integration, 7-day support | 2 workflows, CRM integration, team walkthrough, 14-day support |
 
+**Note**: The $297 "Install & Harden" tier is Fiverr-exclusive. It exists to compete with the $25-$100 sellers on quality while getting a foot in the door. After delivery, upsell to QuickDeploy ($497) or TurnKey ($1,497) off-platform via Calendly.
+
 **Gig Description** (PAS framework — problem-aware audience):
 
 ```
 Still wrestling with Docker configs, API keys, and security gaps trying to get OpenClaw running?
 
-You're not alone. The average DIY setup takes 80+ hours and most end up with exposed credentials, no audit trail, and a bot that breaks after the first update.
+You're not alone. DIY setups commonly take dozens of hours and most end up with exposed credentials, no audit trail, and a bot that breaks after the first update. (One community member documented spending 80 hours and $800 before calling it quits.)
 
 I handle the entire deployment — hardened, documented, and production-ready — so you can start using your AI agent instead of fighting with it.
 
@@ -110,7 +131,7 @@ WHY WORK WITH ME:
 - Deployed OpenClaw for founders, agencies, and exec teams across the US and Caribbean
 - Security-first approach: Composio middleware, Docker sandboxing, credential isolation
 - You talk to your bot through Telegram, Slack, or WhatsApp — no terminal required
-- 100% satisfaction guarantee — full refund if you're not happy
+- 7-day satisfaction guarantee — if your deployment isn't working as promised, full refund
 
 FAQ:
 
@@ -132,7 +153,7 @@ A: You'll have a working bot you can message within 24-48 hours of starting.
 2. Before/After: Terminal chaos → clean Telegram chat with working bot
 3. What's Included checklist (visual)
 4. Security features (Docker, firewall, Composio)
-5. Testimonial quote graphic (use real OpenClaw community quote)
+5. OpenClaw community quote graphic (clearly labeled "What the community says about OpenClaw")
 
 ---
 
@@ -145,7 +166,7 @@ A: You'll have a working bot you can message within 24-48 hours of starting.
 ```
 I deploy, harden, and maintain OpenClaw AI agents for businesses that want AI leverage without the learning curve.
 
-Most teams that try OpenClaw bounce off the install — not the functionality. Docker configs, API key management, security hardening, and integration wiring take 80+ hours if you're doing it yourself. I handle all of it so your team can start using the agent on day one.
+Most teams that try OpenClaw bounce off the install — not the functionality. Docker configs, API key management, security hardening, and integration wiring can take days or weeks if you're doing it yourself. I handle all of it so your team can start using the agent on day one.
 
 What I deliver:
 - Production-grade OpenClaw deployment on your VPS or Mac Mini
@@ -155,7 +176,7 @@ What I deliver:
 - Documentation and team onboarding — no technical knowledge required on your end
 - Ongoing managed support available (monitoring, updates, new workflows)
 
-Clients include solo founders, law firms, agencies, and exec teams across the US and Caribbean. Every deployment includes a satisfaction guarantee.
+Clients include solo founders, law firms, agencies, and exec teams across the US and Caribbean. Every deployment includes a 7-day satisfaction guarantee.
 
 Hourly rate: $150/hr
 Fixed-price packages available from $497.
@@ -180,7 +201,7 @@ Hi [name],
 
 I saw you're looking for help with [specific need from job post].
 
-I've deployed OpenClaw for [X] teams — the install is straightforward, but the security hardening and integration wiring is where most setups fail. I handle all of it: Docker sandboxing, credential isolation, email/calendar/CRM wiring, and a handoff doc so your team can use it without touching a terminal.
+I've deployed OpenClaw for multiple teams — the install is straightforward, but the security hardening and integration wiring is where most setups fail. I handle all of it: Docker sandboxing, credential isolation, email/calendar/CRM wiring, and a handoff doc so your team can use it without touching a terminal.
 
 I can have this live within [2-3] days. Happy to jump on a quick call to scope it: [Calendly link]
 
@@ -193,21 +214,21 @@ AMDR Automate AI
 
 ### Day 2 — Reddit Seeding
 
-**Target Subreddits**:
-- r/selfhosted (1.2M+ members)
-- r/homelab
-- r/OpenClaw or r/clawdbot
-- r/Entrepreneur
-- r/smallbusiness
-- r/artificial
-- r/DevOps
+**Target Subreddits** (verify each exists before posting):
+- r/selfhosted (1.2M+ members) — confirmed active
+- r/homelab — confirmed active
+- r/Entrepreneur — confirmed active
+- r/smallbusiness — confirmed active
+- r/artificial — confirmed active
+- r/DevOps — confirmed active
+- OpenClaw-specific subreddits — search before posting; if none exist, post in the above
 
 **Post 1 — r/selfhosted (value-first guide)**
 
-**Title**: "I've deployed OpenClaw for 12+ clients. Here are the 5 security mistakes almost everyone makes on DIY installs."
+**Title**: "I've deployed OpenClaw for multiple clients. Here are the 5 security mistakes almost everyone makes on DIY installs."
 
 ```
-I've been doing white-glove OpenClaw deployments for founders and small teams for the past few months. After auditing a dozen installs done by the owners themselves or by Fiverr freelancers, I keep seeing the same security gaps:
+I've been doing white-glove OpenClaw deployments for founders and small teams for the past few months. After auditing installs done by the owners themselves or by Fiverr freelancers, I keep seeing the same security gaps:
 
 1. **Default ports exposed** — OpenClaw's default config leaves ports open that should be firewalled. If you can access your instance from any IP without auth, so can everyone else. Fix: bind to localhost + reverse proxy with auth.
 
@@ -215,7 +236,7 @@ I've been doing white-glove OpenClaw deployments for founders and small teams fo
 
 3. **No Docker resource limits** — OpenClaw can consume your entire VPS if an agent loops. One bad skill or prompt injection and your 4GB VPS is OOM-killed. Fix: set memory and CPU limits in docker-compose.
 
-4. **ClawHub skills installed without review** — 12-20% of community skills have been flagged as malicious or poorly sandboxed. Fix: audit every skill before installing, or stick to the official skill set.
+4. **Community skills installed without review** — Some community-contributed skills have been flagged as poorly sandboxed or potentially malicious. Fix: audit every skill before installing, or stick to the official skill set.
 
 5. **No backup or rollback plan** — OpenClaw stores memory, skills, and config in local volumes. If your VPS dies, everything's gone. Fix: automated daily backup to S3 or remote storage.
 
@@ -274,9 +295,29 @@ If anyone's curious about what this looks like in practice, happy to answer ques
 
 **Profile Title**: "OpenClaw AI Agent Deployment — Turnkey Setup & Security Hardening"
 
-**Services**: Mirror Fiverr tiers (QuickDeploy $497, TurnKey Lite $997)
+**Profile Overview** (adapt from Upwork):
+```
+I deploy, harden, and maintain OpenClaw AI agents for businesses that want AI leverage without the learning curve. Security-first approach: Docker sandboxing, firewall hardening, credential isolation via Composio.
+
+Packages from $497 (QuickDeploy) to $997 (TurnKey Lite with workflows + CRM integration). 7-day satisfaction guarantee on every deployment.
+```
+
+**Services**: QuickDeploy $497, TurnKey Lite $997
+
+**Portfolio Items**: Screenshots of deployed setups (redacted), security audit checklist, integration diagram
 
 **Key Advantage**: 0% commission — you keep 100% of the fee. Use Contra for clients who find you through other channels but want a structured contract.
+
+---
+
+### Day 7 — Google Business Profile
+
+- **Business Name**: AMDR Automate AI
+- **Category**: AI Consulting / IT Consulting
+- **Address**: Atlanta, GA (use registered address)
+- **Description**: "AI deployment and automation services. We deploy OpenClaw private AI agents for businesses — turnkey setup, security hardening, and integrations. Serving Atlanta, Miami, and worldwide remote."
+- **Hours**: Mon-Fri 9 AM - 6 PM EST
+- **Website**: claw.amdrautomate.ai
 
 ---
 
@@ -288,9 +329,9 @@ If anyone's curious about what this looks like in practice, happy to answer ques
 
 ```
 Tweet 1 (ATTENTION):
-OpenClaw is the most powerful AI agent framework in 2026.
+OpenClaw is one of the fastest-growing AI agent frameworks in 2026.
 
-But 80% of people who try it never get past the install.
+But most people who try it never get past the install.
 
 We've deployed it for founders, agencies, and exec teams across 3 countries.
 
@@ -320,7 +361,7 @@ Because the install is a nightmare for non-technical people:
 - Integration wiring (Gmail, HubSpot, Notion...)
 - Security hardening
 
-One founder told us he spent 80 hours and $800 before giving up.
+Community members have reported spending days or weeks on DIY setups.
 
 Tweet 4 (INTEREST — Security angle):
 And even when people DO get it running, the security is usually broken:
@@ -328,7 +369,7 @@ And even when people DO get it running, the security is usually broken:
 - Default ports exposed to the internet
 - Raw API keys in plaintext .env files
 - No Docker resource limits (one bad prompt = OOM crash)
-- 12-20% of community skills flagged as malicious
+- Community skills installed without audit
 
 A "working" install ≠ a secure install.
 
@@ -342,13 +383,13 @@ DeployClaw by AMDR Automate:
 - You start using it on day one — no terminal, no code
 
 Tweet 6 (DESIRE — Social proof):
-What our clients say after day one:
+What the OpenClaw community says about the platform:
 
 "My personal bot has replaced at least half the apps I used to operate myself."
 
 "Being able to spin up agents to implement features from my phone is mind-blowing."
 
-"It feels like hiring an employee rather than opening another chat window."
+"It feels like hiring an employee rather than opening another chat window." — MacStories
 
 Tweet 7 (ACTION — Offer):
 Packages start at $497 for a full QuickDeploy.
@@ -357,7 +398,7 @@ Teams that want workflows, integrations, and ongoing support: $1,497.
 
 White-glove with custom agents and on-site option: $2,997.
 
-100% satisfaction guarantee on every deployment.
+7-day satisfaction guarantee on every deployment.
 
 Tweet 8 (ACTION — CTA):
 Book a free 15-minute strategy call:
@@ -418,7 +459,7 @@ We deployed an OpenClaw agent on a $10/month VPS. Connected Gmail, Google Calend
 Day one, the bot sent him his morning briefing at 8:00 AM sharp. By 8:15, he was in strategy mode instead of email mode. He told us: "I got my mornings back."
 
 [TESTIMONY]
-This isn't hypothetical. OpenClaw has 196,000+ GitHub stars and 600+ contributors. Real companies are deploying it:
+This isn't hypothetical. OpenClaw has 196,000+ GitHub stars and 600+ contributors. Here's what the community says about the platform itself:
 
 "It feels like hiring an employee rather than opening another chat window." — MacStories
 
@@ -438,7 +479,7 @@ Three packages:
 - TurnKey ($1,497): 3 workflows + CRM + team onboarding + 30-day support
 - Concierge ($2,997): Custom agents + on-site option + 60-day support
 
-Every deployment comes with a 100% satisfaction guarantee.
+Every deployment comes with a 7-day satisfaction guarantee.
 
 [RESPONSE]
 If your mornings look like the one I described above, book a free 15-minute strategy call. We'll scope what your team actually needs and whether OpenClaw is the right fit.
@@ -464,11 +505,11 @@ You need one AI agent that connects Gmail, Calendar, CRM, and Slack — and acts
 
 That's what OpenClaw does. It's open-source, runs on YOUR server, and works 24/7.
 
-The problem? Getting it deployed, secured, and wired to your tools takes 80+ hours if you're doing it yourself.
+The problem? Getting it deployed, secured, and wired to your tools can take days or weeks if you're doing it yourself.
 
 We handle all of it. Deploy, harden, integrate, document.
 
-Packages from $497. 100% satisfaction guarantee.
+Packages from $497. 7-day satisfaction guarantee.
 
 → Book a free strategy call: calendly.com/amdrautomate/deployclaw
 
@@ -495,7 +536,7 @@ Packages from $497. 100% satisfaction guarantee.
 
 **Slide 3** (Problem):
 "Why most businesses can't set it up"
-- 80+ hours of technical configuration
+- Days or weeks of technical configuration
 - Docker, API keys, firewall rules
 - Security gaps in most DIY installs
 - No documentation or team onboarding
@@ -517,11 +558,11 @@ claw.amdrautomate.ai
 ```
 Most teams that try OpenClaw give up before they get it running.
 
-Not because the tech is bad — it's incredible. But the setup requires Docker configs, API key management, security hardening, and integration wiring that takes 80+ hours.
+Not because the tech is bad — it's incredible. But the setup requires Docker configs, API key management, security hardening, and integration wiring that can take days or weeks.
 
 We handle all of it. Your AI agent deployed, secured, and connected to your tools in under 24 hours.
 
-Packages from $497. 100% satisfaction guarantee.
+Packages from $497. 7-day satisfaction guarantee.
 
 Book a free strategy call → link in bio
 
@@ -551,7 +592,7 @@ Book a free strategy call → link in bio
 "It's like having a personal assistant that never sleeps — except it runs on your own hardware. Your data never leaves your server."
 
 [35-50s] THE PROBLEM:
-"The catch? Setting this up takes most people 80+ hours. Docker, API keys, security — it's a full engineering project."
+"The catch? Setting this up takes most people days or weeks. Docker, API keys, security — it's a full engineering project."
 
 "That's what I do. I deploy it for you in 24 hours, fully secured and connected to your tools."
 
@@ -625,7 +666,7 @@ We just launched a service that deploys a private AI assistant for your business
 
 Think of it like a digital employee that never sleeps — but costs $497 one-time instead of $3,000/month in salary.
 
-First 5 Caribbean businesses get a special introductory rate. Interested?
+First 5 Caribbean businesses get 20% off QuickDeploy — that's $397 instead of $497. Interested?
 
 Book a free call: calendly.com/amdrautomate/deployclaw
 
@@ -644,7 +685,7 @@ Or just reply here and we'll set up a time.
 **Description**:
 
 ```
-OpenClaw is incredible — but getting it deployed, secured, and integrated with your business tools takes 80+ hours.
+OpenClaw is incredible — but getting it deployed, secured, and integrated with your business tools can take days or weeks of engineering work.
 
 DeployClaw handles everything:
 - VPS or Mac Mini deployment
@@ -657,7 +698,7 @@ You talk to your AI agent through Telegram, Slack, or WhatsApp. Like texting a p
 
 Packages: QuickDeploy ($497) | TurnKey ($1,497) | Concierge ($2,997)
 
-100% satisfaction guarantee. We deploy worldwide — remote or on-site in Atlanta, Miami, and Kingston.
+7-day satisfaction guarantee. We deploy worldwide — remote or on-site in Atlanta, Miami, and Kingston.
 ```
 
 **Launch Day Checklist**:
@@ -671,8 +712,11 @@ Packages: QuickDeploy ($497) | TurnKey ($1,497) | Concierge ($2,997)
 ### Affiliate Program (Day 15+)
 
 **Commission**: 30% of first payment
-**How it works**: Email hello@amdrautomate.ai or DM @amdrautomate on Instagram → receive unique referral link
+**How it works**: Email hello@amdrautomate.ai or DM @amdrautomate on Instagram → we manually generate a unique coupon code + UTM link for tracking
+**Tracking**: UTM parameters per affiliate (e.g., `?ref=affiliatename`) + unique Stripe coupon code per affiliate. Track in Google Sheet "DeployClaw Affiliates" with columns: Name, Code, UTM, Referrals, Revenue, Commission Paid
 **Target affiliates**: AI content creators, tech YouTubers, n8n community members, OpenClaw power users
+
+**Prerequisite**: Build /affiliates page on website before Day 15 (simple page explaining 30% commission, how to apply, and FAQ)
 
 **Outreach script**:
 
@@ -690,14 +734,77 @@ Details: claw.amdrautomate.ai/affiliates
 
 ---
 
-### Google Business Profile (Day 7)
+## EMAIL MARKETING (Ongoing from Day 1)
 
-- **Business Name**: AMDR Automate AI
-- **Category**: AI Consulting / IT Consulting
-- **Address**: Atlanta, GA (use registered address)
-- **Description**: "AI deployment and automation services. We deploy OpenClaw private AI agents for businesses — turnkey setup, security hardening, and integrations. Serving Atlanta, Miami, and worldwide remote."
-- **Hours**: Mon-Fri 9 AM - 6 PM EST
-- **Website**: claw.amdrautomate.ai
+### Lead Magnet
+- **Asset**: "OpenClaw Security Checklist — 10 Things to Audit Before Your Bot Goes Live" (PDF)
+- **Delivery**: Downloadable from website in exchange for email address
+- **Placement**: Add email capture form to website hero section or as a pop-up after 30 seconds
+- **Tool**: Use Calendly's post-booking emails or a free Mailchimp account (up to 500 contacts free)
+
+### 3-Email Welcome Sequence (triggered on lead magnet download)
+
+**Email 1 — Immediate (deliver the asset)**
+Subject: Your OpenClaw Security Checklist is here
+```
+Hey [name],
+
+Here's your checklist: [PDF link]
+
+These are the 10 things we audit on every deployment before handing over to the client. Most DIY installs miss at least 3 of them.
+
+If you want us to handle the whole thing — deploy, secure, integrate — packages start at $497. Book a free call: [Calendly link]
+
+— Andre, AMDR Automate
+```
+
+**Email 2 — Day 3 (value + social proof)**
+Subject: What happens after OpenClaw is deployed
+```
+Hey [name],
+
+Wanted to share what a typical client's first week looks like after we deploy:
+
+Day 1: Bot is live. Morning briefing arrives at 8 AM with calendar + email summary.
+Day 3: Client messages "draft a reply to [vendor name]" from their phone. Bot handles it.
+Day 7: Client tells us "I got my mornings back."
+
+The tech is real. The hard part is getting it configured for YOUR specific tools and workflows.
+
+That's what we do. If you're interested: [Calendly link]
+
+— Andre
+```
+
+**Email 3 — Day 7 (soft close)**
+Subject: Quick question
+```
+Hey [name],
+
+Did you get a chance to try anything from the security checklist?
+
+If you're finding the setup overwhelming (most people do), I'm happy to jump on a 15-minute call and assess whether a done-for-you deployment makes sense for your situation. No pressure either way.
+
+[Calendly link]
+
+— Andre
+```
+
+### Calendly No-Show Follow-Up
+If someone books but doesn't show, send within 24 hours:
+```
+Subject: Missed you today — want to reschedule?
+
+Hey [name],
+
+No worries about today's call. Things happen.
+
+Here's a fresh link to rebook whenever works: [Calendly link]
+
+If you'd rather just chat over email or WhatsApp, reply here and I'll answer any questions.
+
+— Andre
+```
 
 ---
 
@@ -719,6 +826,32 @@ Details: claw.amdrautomate.ai/affiliates
 
 ---
 
+## TRACKING & ANALYTICS
+
+### UTM Convention
+All links shared on platforms use UTM parameters:
+- `?utm_source=[platform]&utm_medium=[type]&utm_campaign=deployclaw-launch`
+- Examples:
+  - Fiverr profile: `?utm_source=fiverr&utm_medium=gig&utm_campaign=deployclaw-launch`
+  - LinkedIn article: `?utm_source=linkedin&utm_medium=article&utm_campaign=deployclaw-launch`
+  - Reddit post: `?utm_source=reddit&utm_medium=post&utm_campaign=deployclaw-launch`
+  - Cold DM: `?utm_source=twitter&utm_medium=dm&utm_campaign=deployclaw-launch`
+
+### Weekly Tracking Spreadsheet
+Google Sheet "DeployClaw Launch Tracker" with tabs:
+1. **Leads**: Date, Source (UTM), Name, Email, Calendly booked (Y/N), Outcome
+2. **Revenue**: Date, Client, Package, Amount, Platform source, Affiliate (if any)
+3. **Content**: Date, Platform, Content type, Link, Engagement metrics
+4. **Affiliates**: Name, Code, UTM, Referrals, Revenue, Commission owed
+
+### Weekly Review (Sunday)
+- Review all metrics against 30-day targets
+- Identify top-performing platform and double down
+- Identify underperforming platform and adjust or drop
+- Plan next week's content based on what's working
+
+---
+
 ## SUCCESS METRICS (30-Day Targets)
 
 | Metric | Target |
@@ -729,6 +862,7 @@ Details: claw.amdrautomate.ai/affiliates
 | Closed deals (total) | 5-8 |
 | Revenue | $3,000-$8,000 |
 | Affiliate signups | 5-10 |
+| Email list subscribers | 50-100 |
 | Social followers gained | 200-500 across platforms |
 | Reddit karma / reputation | Top contributor in r/selfhosted OpenClaw threads |
 
@@ -743,6 +877,8 @@ Details: claw.amdrautomate.ai/affiliates
 | Reddit self-promo backlash | 80% value rule — only mention service when directly relevant |
 | OpenClaw breaking changes | Monitor GitHub releases weekly, update client installs proactively |
 | SetupClaw expanding to East Coast | Speed advantage — we're already listed and active before they expand |
+| Testimonial attribution complaints | All community quotes clearly labeled as platform reviews, not client endorsements |
+| Refund abuse on Fiverr | 7-day window with clear scope definition; Fiverr resolution center as backstop |
 
 ---
 
