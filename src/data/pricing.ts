@@ -10,54 +10,53 @@ export interface Tier {
 
 export const TIERS: Tier[] = [
   {
-    id: "starter",
-    name: "Starter",
-    price: "$1,497",
-    description: "For solo founders and small teams (1–10 people). Get your first AI agent live on a cloud server with core integrations.",
+    id: "quickdeploy",
+    name: "QuickDeploy",
+    price: "$497",
+    description: "Your first AI agent, live on a hardened cloud server in under 24 hours. Ideal for solo founders ready to test the waters.",
     features: [
-      "Hardened cloud VPS deployment",
-      "Email + calendar wired on day one",
-      "1 custom automation workflow",
-      "Documentation + video walkthrough",
-      "14-day direct support via Slack or WhatsApp",
+      "Cloud VPS deployed + security hardened",
+      "Email + calendar connected",
+      "1 integration of your choice",
+      "7-day direct support (Slack or WhatsApp)",
+      "Handoff documentation",
     ],
   },
   {
-    id: "growth",
-    name: "Growth",
-    price: "$2,997",
-    badge: "Best Value",
-    description: "For growing teams (10–25 people) that need multi-department coverage — sales, ops, and leadership each get their own workflows.",
+    id: "turnkey",
+    name: "TurnKey",
+    price: "$1,497",
+    badge: "Most Popular",
+    description: "The full done-for-you package. Your AI agent configured for your business, not a generic install. Built for teams of 2–15.",
     features: [
-      "Everything in Starter",
-      "Up to 3 custom automation workflows",
+      "Everything in QuickDeploy",
+      "3 custom automation workflows",
       "CRM or project tool integration (HubSpot, Notion, etc.)",
       "Team onboarding session (up to 5 users)",
-      "30-day direct support",
+      "30-day direct support + check-in calls",
     ],
   },
   {
     id: "concierge",
-    name: "Full Concierge",
-    price: "$4,997",
-    suffix: "+",
-    description: "For teams that want the full white-glove experience — on-site deployment, custom AI agents, and hands-on executive training.",
+    name: "Concierge",
+    price: "$2,997",
+    description: "White-glove deployment with custom agents, on-site option, and hands-on executive training. For teams that want it done right the first time.",
     features: [
-      "Everything in Growth",
+      "Everything in TurnKey",
       "Up to 6 custom workflows",
-      "On-site setup in Atlanta or Miami included",
-      "Custom AI agent development (up to 2 agents)",
+      "On-site setup available (Atlanta, Miami, Kingston)",
+      "2 purpose-built AI agents (Sales, Ops, Finance, etc.)",
       "Executive 1-on-1 training",
-      "60-day direct support + monthly strategy calls",
+      "60-day support + monthly strategy calls",
     ],
   },
 ];
 
 export const ADDONS = [
-  { name: "Additional AI agent", price: "$1,497", note: "CEO, Sales, Finance — each identity gets its own agent" },
-  { name: "Caribbean on-site deployment", price: "+$2,500", note: "Jamaica, Bahamas, Trinidad, Barbados — we fly to you" },
-  { name: "Additional workflow", price: "$497", note: "New automation after initial setup" },
-  { name: "Extra tool integration", price: "$297", note: "Connect another app to your agent" },
+  { name: "Additional AI agent", price: "+$997", note: "Sales, Finance, Ops — each role gets its own agent" },
+  { name: "Caribbean on-site deployment", price: "+$1,500", note: "Jamaica, Bahamas, Trinidad, Barbados — we fly to you" },
+  { name: "Additional workflow", price: "+$297", note: "New automation added after initial setup" },
+  { name: "Extra tool integration", price: "+$197", note: "Connect another app to your agent" },
 ];
 
 export interface Careplan {
@@ -68,19 +67,19 @@ export interface Careplan {
 
 export const MANAGED_CARE: Careplan[] = [
   {
-    name: "Essential",
-    price: "$197/mo",
+    name: "ClawCare Lite",
+    price: "$147/mo",
     description: "Monitoring, updates, 2 support tickets/month, uptime guarantee",
   },
   {
-    name: "Professional",
-    price: "$497/mo",
-    description: "Everything in Essential + 1 new workflow/month, priority support, monthly optimization report",
+    name: "ClawCare Pro",
+    price: "$297/mo",
+    description: "Everything in Lite + 1 new workflow/month, priority support, monthly optimization report",
   },
   {
     name: "Fractional AI Lead",
-    price: "$1,997/mo",
-    description: "8 hrs/month strategic AI consulting, new agent development, quarterly roadmap",
+    price: "$1,497/mo",
+    description: "8 hrs/month strategic AI consulting, agent development, quarterly AI roadmap for your business",
   },
 ];
 

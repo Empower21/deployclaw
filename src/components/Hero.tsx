@@ -43,7 +43,7 @@ export function Hero() {
         >
           <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
           <span className="text-accent-light text-xs font-medium tracking-wide uppercase">
-            Serving East Coast US + Caribbean
+            Deploying worldwide — East Coast US + Caribbean specialists
           </span>
         </motion.div>
 
